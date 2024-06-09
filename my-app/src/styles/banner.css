@@ -1,0 +1,52 @@
+.banner {
+    border-radius: 10px;
+    height: 111px;
+    margin-bottom: 35px;
+    position: relative;
+  }
+  
+  @media screen and (min-width: 1024px) { /* Replace with actual $breakpoint-desktop value */
+    .banner {
+      border-radius: 25px;
+      height: 223px;
+    }
+  }
+  
+  .banner__image {
+    border-radius: 25px;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+  
+  
+  .banner__text {
+    position: absolute;
+    top: 28.04%;
+    left: 5.6%;
+    right: 32.53%;
+    bottom: 80.05%;
+    font-style: Medium;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 100%;
+    color: #fff; /* Replace with actual $tertiary-color value */
+    width: 217px;
+    height: 48px;
+  }
+  
+  @media screen and (min-width: 1024px) { /* Replace with actual $breakpoint-desktop value */
+    .banner__text {
+      top: 0;
+      left: 0;
+      right: 0;
+      display: flex; /* Assuming flex-center does this */
+      justify-content: center; /* Assuming flex-center does this */
+      align-items: center; /* Assuming flex-center does this */
+      width: 100%; /* Assuming WH-full does this */
+      height: 100%; /* Assuming WH-full does this */
+      font-size: 48px; /* Assuming font(48px, 500) sets this */
+      font-weight: 500; /* Assuming font(48px, 500) sets this */
+    }
+  }
+  
