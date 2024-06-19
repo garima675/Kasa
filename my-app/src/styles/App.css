@@ -1,5 +1,10 @@
-@import"./styles/navi";
-@import"./styles/header";
-@import"./styles/banner";
-@import"./styles/base";
-@import"./styles/footer";
+/* Ici, j'importe tous mes fichiers CSS depuis le dossier courant (./styles) */
+
+@import"./navi";
+@import"./header";
+@import"./banner";
+@import"./base";
+@import"./footer";
+@import"./cards";
+@import"./gallery";
+
