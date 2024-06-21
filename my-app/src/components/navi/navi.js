@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
             <NavLink to="/accueil" className="header-navi_nav-link-home">
                 Accueil
             </NavLink>
-            <NavLink to="#" className="header-navi__nav-link-about">A Propos</NavLink>
+            <NavLink to="/about" className="header-navi__nav-link-about">A Propos</NavLink>
         </nav>
     );
 
