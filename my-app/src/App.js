@@ -3,6 +3,7 @@ import "./styles/App.css";
 import { Routes, Route, Navigate, HashRouter } from "react-router-dom";
 import HomePage from "./pages/homepage/HomePage";
 import About from "./pages/about/About";
+import Pageerror from "./pages/pageerror/Pageerror";
 
 
 const App = () => {
@@ -12,6 +13,7 @@ const App = () => {
         <Route path="/" element={<Navigate replace to="/accueil" />} />
         <Route path="/accueil" element={<HomePage />} />
         <Route path="/about" element={<About />} />
+        <Route path="*" element={<Pageerror />} />
         </Routes>
     </HashRouter>
   );
