@@ -10,7 +10,7 @@ const Pageerror = () => {
         <div className="Pageerror">
           <Header />
           <main>
-            <NoPage />
+          <NoPage />
           </main>
           <Footer />
         </div>
