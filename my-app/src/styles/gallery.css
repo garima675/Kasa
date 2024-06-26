@@ -1,23 +1,20 @@
-
-     .home_gallery 
-     {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      column-gap: 39px;
-      row-gap: 21px;
-      margin-top: 39px;
-    }
-
-    @media screen and (min-width: 1024px) {
-    .home_gallery  {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      column-gap: 50px;
-      row-gap: 30px;
-      background:white;
-      padding: 50px;
-      border-radius: 24px;
-      margin-bottom: 39px;
-    
+.home_gallery {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 39px;
+  row-gap: 21px;
+  margin-top: 39px;
 }
-    }
+
+@media screen and (min-width: 1024px) {
+  .home_gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    row-gap: 30px;
+    background: white;
+    padding: 50px;
+    border-radius: 24px;
+    margin-bottom: 39px;
+  }
+}
