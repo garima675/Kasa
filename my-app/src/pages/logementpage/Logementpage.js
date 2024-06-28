@@ -1,14 +1,17 @@
 import React from "react";
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
+import Displaylogement from "../../components/Elementsoflogementpage/Displaylogement";
 
-const Logement = () => {
+const Logementpage = () => {
   return (
     <div classname="logement">
       <Header />
-      <main></main>
+      <main>
+        <Displaylogement />
+      </main>
       <Footer />
     </div>
   );
 };
-export default Logement;
+export default Logementpage;

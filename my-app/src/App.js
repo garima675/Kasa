@@ -4,7 +4,7 @@ import { Routes, Route, Navigate, HashRouter } from "react-router-dom";
 import HomePage from "./pages/homepage/HomePage";
 import About from "./pages/about/About";
 import Pageerror from "./pages/pageerror/Pageerror";
-import Logement from "./pages/logement/Logement";
+import Logementpage from "./pages/logementpage/Logementpage";
 
 const App = () => {
   return (
@@ -14,6 +14,7 @@ const App = () => {
         <Route path="/accueil" element={<HomePage />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<Pageerror />} />
+        <Route path="/logement/:id" element={<Logementpage />} />
       </Routes>
     </HashRouter>
   );
