@@ -1,5 +1,5 @@
-import empty from "../../images/starRempli.png";
-import full from "../../images/starVide.png";
+import empty from "../../images/star-active 1.png";
+import full from "../../images/star-inactive 1.jpg";
 
 function Rate(props) {
   const score = props.score;

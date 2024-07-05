@@ -5,8 +5,8 @@
 
 @media screen and (min-width: 1024px) {
   .Dropdown__container {
-    width: 82%;
-    margin-left: 9%;
+    width: 100%;
+    margin-left: 0%;
   }
 }
 
@@ -30,8 +30,18 @@
   font-size: 18px;
   font-family: Montserrat;
 }
+.fa-chevron-up {
+  transition: transform 0.25s ease; /* Slow rotation effect */
+}
 
-.fa-chevron-down,
+.rotate {
+  transform: rotate(-180deg); /* Rotate 180 degrees to point downwards */
+}
 .fa-chevron-up {
   color: white;
+  width: 5px;
+  height: 5px;
+  position: relative;
+  right: 15px;
+  top: 5px;
 }

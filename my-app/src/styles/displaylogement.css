@@ -1,5 +1,4 @@
-
-  Fiche-container {
+Fiche-container {
   color: var(--primary-color);
   display: flex;
   flex-direction: column;
@@ -153,11 +152,3 @@
     padding-left: 40px;
   }
 }
-
-
-
-
-
-
-
-

@@ -7,9 +7,10 @@ import Dropdown from "../../components/dropdown/Dropdown";
 import Carousel from "./Carousel";
 
 const Displaylogement = () => {
+  /* Récupère la bonne fiche */
   const { id } = useParams();
 
-  const ficheLogement = logements.find((logements) => logements.id === id);
+  const ficheLogement = logements.find((logement) => logement.id === id);
 
   /* Tags */
   const tagsLogement = ficheLogement?.tags.map((tags, i) => {
@@ -28,14 +29,14 @@ const Displaylogement = () => {
   return (
     <>
       {ficheLogement ? (
-        <div className="pictures-container">
+        <div className="Fiche-container">
           <Carousel slides={ficheLogement?.pictures} />
           <section className="Fiche-logement">
-            <div className="description-information">
-              <div className="description-information__titletags">
-                <div className="description-information__titletags__title">
-                  <span className="title-logement">{ficheLogement?.title}</span>
-                  <span className="place-logement">
+            <div className="description-info">
+              <div className="description-info__titletags">
+                <div className="description-info__titletags__title">
+                  <span className="titre-logement">{ficheLogement?.title}</span>
+                  <span className="endroit-logement">
                     {ficheLogement?.location}
                   </span>
                 </div>
@@ -45,30 +46,30 @@ const Displaylogement = () => {
                 </div>
               </div>
 
-              <div className="description-information__owner">
-                {/* Host */}
-                <div className="description-information__owner__name">
+              <div className="description-info__proprietaire">
+                {/* Hosting */}
+                <div className="description-info__proprietaire__nom-prop">
                   <Host
                     name={ficheLogement?.host.name}
                     picture={ficheLogement?.host.picture}
                   />
                 </div>
                 {/* Rating */}
-                <div className="description-info__owner__rate">
+                <div className="description-info__proprietaire__rate">
                   <Rate score={ficheLogement.rating} />
                 </div>
               </div>
             </div>
           </section>
           {/* dropdown */}
-          <div className="description-logement">
-            <div className="description-logement__description">
+          <div className="description-centent">
+            <div className="description-centent__description">
               <Dropdown
                 title="Description"
                 content={ficheLogement?.description}
               />
             </div>
-            <div className="description-logement__equipement">
+            <div className="description-centent__equipement">
               <Dropdown title="Équipements" content={equipements} />
             </div>
           </div>
