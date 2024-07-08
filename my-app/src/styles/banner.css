@@ -1,163 +1,47 @@
-
-  Fiche-container {
-  color: var(--primary-color);
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
+.banner {
+  border-radius: 10px;
+  height: 111px;
+  margin-bottom: 35px;
+  position: relative;
+  bottom: 50px;
 }
 
-.Fiche-logement {
-  display: flex;
-  flex-direction: column;
+@media screen and (min-width: 1024px) {
+  .banner {
+    border-radius: 25px;
+    height: 223px;
+    margin-top: 80px;
+  }
+}
+
+.banner__image {
+  border-radius: 25px;
+  height: 100%;
+  object-fit: cover;
   width: 100%;
+  opacity: 0.6;
 }
 
-.description-info {
-  display: flex;
-  flex-direction: column;
+.banner__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0.4);
+  border-radius: 25px;
 }
-
-.description-info__titletags {
-  display: flex;
-  flex-direction: column;
-}
-
-.description-info__titletags__title {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 15px;
-}
-
-.titre-logement {
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.endroit-logement {
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.description-info__titletags__tags {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-}
-
 @media screen and (min-width: 1024px) {
-  .description-info {
+  .banner__text {
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .description-info__titletags {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
-  }
-
-  .description-info__titletags__title {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .titre-logement {
-    font-size: 36px;
-    font-weight: 500;
-    display: flex;
-    align-items: flex-end;
-  }
-
-  .endroit-logement {
-    font-size: 18px;
-    font-weight: 500;
-    display: flex;
-    align-items: flex-end;
-  }
-}
-
-.description-info__proprietaire {
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-@media screen and (min-width: 1024px) {
-  .description-info__proprietaire {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 48px;
+    font-weight: 500;
   }
 }
-
-.description-info__proprietaire__nom-prop {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.name-owner {
-  font-size: 18px;
-  font-weight: 500;
-  margin-right: 10px;
-  text-align: right;
-  width: 93px;
-}
-
-.photo-owner {
-  border-radius: 50%;
-  width: 64px;
-  height: 64px;
-  object-fit: cover;
-}
-
-.description-info__proprietaire__rate {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 20px;
-}
-
-.etoile {
-  width: 15px;
-  height: 15px;
-}
-
-@media screen and (min-width: 1024px) {
-  .etoile {
-    width: 30px;
-    height: 30px;
-  }
-}
-
-.description-centent {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-@media screen and (min-width: 1024px) {
-  .description-centent {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .description-centent__description {
-    width: 50%;
-    padding-right: 40px;
-  }
-
-  .description-centent__equipement {
-    width: 50%;
-    padding-left: 40px;
-  }
-}
-
-
-
-
-
-
-
-

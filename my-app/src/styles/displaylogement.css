@@ -1,5 +1,4 @@
 Fiche-container {
-  color: var(--primary-color);
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
@@ -30,11 +29,13 @@ Fiche-container {
 .titre-logement {
   font-size: 18px;
   font-weight: 500;
+  color: #ff6060;
 }
 
 .endroit-logement {
   font-size: 14px;
   font-weight: 500;
+  margin-top: 8px;
 }
 
 .description-info__titletags__tags {
@@ -88,6 +89,14 @@ Fiche-container {
     justify-content: center;
     align-items: center;
   }
+  .name-owner {
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 10px;
+    text-align: right;
+    width: 93px;
+    color: #ff6060;
+  }
 }
 
 .description-info__proprietaire__nom-prop {
@@ -97,11 +106,12 @@ Fiche-container {
 }
 
 .name-owner {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   margin-right: 10px;
   text-align: right;
   width: 93px;
+  color: #ff6060;
 }
 
 .photo-owner {
@@ -119,13 +129,18 @@ Fiche-container {
 
 .etoile {
   width: 15px;
-  height: 15px;
+  height: 18px;
+  position: relative;
+  right: 200%;
+  top: 30%;
 }
 
 @media screen and (min-width: 1024px) {
   .etoile {
     width: 30px;
     height: 30px;
+    position: relative;
+    right: 10px;
   }
 }
 
@@ -143,12 +158,14 @@ Fiche-container {
   }
 
   .description-centent__description {
-    width: 50%;
-    padding-right: 40px;
+    width: 60%;
+    position: relative;
+    right: 40px;
   }
 
   .description-centent__equipement {
-    width: 50%;
-    padding-left: 40px;
+    width: 60%;
+    position: relative;
+    left: 40px;
   }
 }
