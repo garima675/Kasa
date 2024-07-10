@@ -8,9 +8,9 @@ header {
 }
 
 .header__fig img {
-  width: 100%;
+  width: 95%;
   position: relative;
-  right: 40px;
+  right: 60px;
 }
 
 .header__fig {

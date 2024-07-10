@@ -1,12 +1,12 @@
 import React from "react";
 
-function Banner({ image, texte }) {
+function Banner({ image, children }) {
   return (
     <div className="banner">
       <div className="banner__overlay"></div>
       <img className="banner__image" src={image} alt="Bannière" />
 
-      <span className="banner__text">{texte}</span>
+      <span className="banner__text">{children}</span>
     </div>
   );
 }

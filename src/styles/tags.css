@@ -1,5 +1,6 @@
 .tag-contnr {
   display: flex;
+  margin-right: 10px;
 }
 
 .tag-container__btn {
