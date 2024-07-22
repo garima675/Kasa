@@ -123,12 +123,8 @@ Fiche-container {
 
 .description-info__proprietaire__rate {
   display: flex;
-  justify-content: flex-end;
-  margin-top: 20px;
-}
-.rate-cont {
-  display: flex;
   justify-content: flex-start;
+  margin-top: 40px;
   align-items: center;
 }
 
@@ -138,7 +134,7 @@ Fiche-container {
   width: 17px;
   height: 18px;
   position: relative;
-  right: 250px;
+  right: 238px;
 }
 
 @media screen and (max-width: 450px) {
