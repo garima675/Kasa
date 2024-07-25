@@ -18,12 +18,12 @@
 }
 
 .Dropdown__contentText {
-  margin-top: 10px;
   margin-bottom: 40px;
   font-size: 15px;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   background-color: #f6f6f6;
   padding: 16px;
+  line-height: 24px;
 }
 
 .rotate {
@@ -56,20 +56,21 @@
     padding: 11px;
     border-radius: 5.2px;
     cursor: pointer;
-  }
 
-  .Dropdown__title h2 {
-    color: #ffffff;
-    font-size: 25px;
+    .Dropdown__title h2 {
+      color: #ffffff;
+      font-size: 25px;
+      font-family: Montserrat;
+    }
   }
 
   .Dropdown__contentText {
-    margin-top: 10px;
     margin-bottom: 40px;
     font-size: 18px;
-    font-family: Montserrat;
+    font-family: "Montserrat", sans-serif;
     background-color: #f6f6f6;
     padding: 16px;
+    line-height: 24px;
   }
 }
 .dropdown_area {

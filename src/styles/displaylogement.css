@@ -34,7 +34,7 @@ Fiche-container {
 
 .endroit-logement {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 550;
   margin-top: 8px;
 }
 
@@ -71,7 +71,7 @@ Fiche-container {
 
   .endroit-logement {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 550;
     display: flex;
     align-items: flex-end;
   }
@@ -124,8 +124,9 @@ Fiche-container {
 .description-info__proprietaire__rate {
   display: flex;
   justify-content: flex-start;
-  margin-top: 40px;
   align-items: center;
+  flex-grow: 1;
+  margin-right: -30px;
 }
 
 .etoile {
@@ -133,7 +134,6 @@ Fiche-container {
   align-items: center;
   width: 17px;
   height: 18px;
-  position: relative;
   right: 238px;
 }
 
@@ -147,7 +147,6 @@ Fiche-container {
   .etoile {
     width: 17px;
     height: 18px;
-    position: relative;
     left: -80px;
   }
 }
@@ -184,5 +183,11 @@ Fiche-container {
     width: 60%;
     position: relative;
     left: 40px;
+  }
+
+  .description-info__proprietaire__rate {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
 }
